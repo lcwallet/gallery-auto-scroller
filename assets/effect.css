@@ -1,0 +1,49 @@
+ @-webkit-keyframes slide {
+  0%   { transform: translate(0px,100px); }
+  100% { transform: translate(0px,0px); }
+}
+@-moz-keyframes slide {
+  0%   { transform: translate(0px,100px); }
+  100% { transform: translate(0px,0px); }
+}
+@-o-keyframes slide {
+  0%   { transform: translate(0px,100px); }
+  100% { transform: translate(0px,0px); }
+}
+@keyframes slide {
+  0%   { transform: translate(0px,100px); }
+  100% { transform: translate(0px,0px); }
+}
+
+.transition {
+  width: 100%;
+  height: 100%;
+  background: #eee;
+ animation-name: slide;
+ animation-duration: 1s; 
+ animation-fill-mode: forwards; 
+}
+
+
+
+.transition-duration {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+         }
+         
+         @-webkit-keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+         }
+         
+         @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+         }
+         
+ .fadeIn {
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+ }
